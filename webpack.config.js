@@ -12,10 +12,10 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(html)$/,
+				test: /\.(svg)$/,
 				use: [
 					{
-						loader: "html-loader"
+						loader: "svg-inline-loader"
 					}
 				]
 			}
@@ -28,6 +28,4 @@ module.exports = {
 			}),
 		new HtmlWebpackInlineSVGPlugin()
 	]
-
-
 }
