@@ -1,7 +1,13 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlWebpackInlineSVGPlugin = require("html-webpack-inline-svg-plugin");
+const path = require("path");
 
 module.exports = {
+  entry: './src/App.js',
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist')
+  },
 	module: {
 		rules: [
 			{
